@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Unix Timestamp Table</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2><u>Discord Unix Timestap Table</h2></u>
+    <p>This is where I set my stream schedule information. It's automatically converts date and time into unix timestamp code. 
+        Why do this? I like to post my schedule on discord but it's so hard to do manually (converted each date into unix timecode), so now you know. Feel free to use this for your server as well!
+    </p>
+    <div class="timetable-div">
+        <form>
+            <table style="width: 99%;">
+                <tr>
+                    <th style="width: 30%;">Input</th>
+                    <th >Stream Title</th>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date1"><input type="time" id="time1" value="21:30"></td>
+                    <td><input type="text" id="stream-title1"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date2"><input type="time" id="time2" value="21:30"></td>
+                    <td><input type="text" id="stream-title2"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date3"><input type="time" id="time3" value="21:30"></td>
+                    <td><input type="text" id="stream-title3"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date4"><input type="time" id="time4" value="21:30"></td>
+                    <td><input type="text" id="stream-title4"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date5"><input type="time" id="time5" value="21:30"></td>
+                    <td><input type="text" id="stream-title5"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date6"><input type="time" id="time6" value="21:30"></td>
+                    <td><input type="text" id="stream-title6"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="date7"><input type="time" id="time7" value="21:30"></td>
+                    <td><input type="text" id="stream-title7"></td>
+                </tr>
+            </table>
+        </form>
+        <button id="submit" onclick="DoSubmit();"> Submit</button>
+        <input type="checkbox" id="autofill" onclick="autoFill()"> Autofill <span style="color: rgb(177, 177, 177);">*This enable auto-fill on other input dates, applies when the first input date is specified.</span>
+    </div>
+
+    <h2>Output</h2>
+    <p id="output"></p>
+</body>
+</html>

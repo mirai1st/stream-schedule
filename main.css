@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    font-family: "Afacad Flux";
+    color: White;
+    background-color: #2f3136;
+    font-size: large;
+}
+
+.timetable-div {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.timetable-div th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.timetable-div input[type=date] {
+    background-color: #00000000;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+}
+
+.timetable-div input[type=time] {
+    background-color: #00000000;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+}
+
+.timetable-div input[type=text] {
+    background-color: #00000000;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    color: white;
+}
+
+#submit {
+    background-color: #00000000;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    margin-left: 2.5px;
+}
+
+#submit:hover {
+
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#autofill {
+    position:relative;
+    top: 1px;
+}
